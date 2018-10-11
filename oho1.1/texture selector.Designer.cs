@@ -28,11 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.S = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.fileName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.S,
+            this.image,
+            this.fileName});
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(225, 314);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // S
+            // 
+            this.S.Frozen = true;
+            this.S.HeaderText = "Выб.";
+            this.S.Name = "S";
+            this.S.ReadOnly = true;
+            this.S.Width = 30;
+            // 
+            // image
+            // 
+            this.image.Frozen = true;
+            this.image.HeaderText = "Изобр";
+            this.image.Name = "image";
+            this.image.ReadOnly = true;
+            this.image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.image.Width = 50;
+            // 
+            // fileName
+            // 
+            this.fileName.Frozen = true;
+            this.fileName.HeaderText = "имя файла";
+            this.fileName.Name = "fileName";
+            this.fileName.ReadOnly = true;
+            this.fileName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.fileName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // texture_selector
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(225, 315);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "texture_selector";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "texture_selector";
+            this.TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn S;
+        private System.Windows.Forms.DataGridViewImageColumn image;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileName;
     }
 }
