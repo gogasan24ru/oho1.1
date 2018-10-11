@@ -690,7 +690,7 @@ namespace oho1._1
         public bool fix;
         public Image texture;
         public int textureIndex;
-        public objectClass class;
+        //public objectClass class;
 
         public obj(vector p, vector s, int m, bool f)
         {
